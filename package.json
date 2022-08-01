@@ -1,0 +1,35 @@
+{
+  "name": "@thecolvinco/icons",
+  "version": "0.1.0",
+  "description": "A package for easy control of all standardization of code and projects.",
+  "author": "TheColvinCo",
+  "main": "./bin/colvin-icons.js",
+  "license": "MIT",
+  "homepage": "https://github.com/TheColvinCo/colvin-icons#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheColvinCo/colvin-icons.git"
+  },
+  "bugs": {
+    "url": "https://github.com/TheColvinCo/colvin-icons/issues"
+  },
+  "bin": {
+    "colvin-icons": "./bin/colvin-icons.js"
+  },
+  "scripts": {
+    "release": "git commit -am $npm_package_version && git push && pnpm publish"
+  },
+  "dependencies": {
+    "commander": "9.4.0",
+    "svgo": "2.8.0"
+  },
+  "devDependencies": {
+    "@thecolvinco/lint": "1.1.16"
+  },
+  "prettier": "./node_modules/@thecolvinco/lint/.prettierrc.js",
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/@thecolvinco/lint/.eslintrc.js"
+    ]
+  }
+}
